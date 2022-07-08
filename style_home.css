@@ -1,0 +1,146 @@
+header{
+	background: #bbbbbb;
+	padding: 20px 0;
+}
+.caixa{
+	position:relative;
+	width: 940px;
+	margin: 0 auto;
+}
+nav{
+	position: absolute;
+	top: 220px;
+	right: 0;
+}
+nav li{
+	display: inline;
+	margin: 0 0 0 15px;
+}
+nav a{
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none; /*sem sublinhado, sem nada*/
+}
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+body{
+	font-family: 'Noto Sans', sans-serif;
+}
+.banner{
+	width: 80%;
+	margin-bottom: 5px;
+}
+.sessao-principal{
+	background: #fefefe;
+}
+.principal{
+	width: 940px;
+	text-align: center;
+	margin: 30px auto;
+	padding:3em 10px;
+	background: #696969;
+	border: 1px hidden #000000;
+	border-radius: 20px;
+}
+.principal p{
+	font-size: 1.1em;
+	text-align: left;
+	margin: 0 0 1em;
+}
+.utensilios{
+	width: 100px;
+	float: left;
+	margin: 0 20px 20px 0; /*cima direita baixo esquerda*/
+}
+.titulo{
+	font-weight: bolder;
+	text-align: center;
+	font-size:35px; /*usar 2em no lugar de 35px faz que a fonte seja 2 vezes maior que  fonte base*/
+	color: #000000;
+	margin-bottom: 1em;
+	clear: left;
+	color: rgba(0, 0, 0, 0.6); /*define a cor em rgb e depois aplica opacidade*/
+	/*text-shadow: 2px 2px 1px #808080; sobra em textos */
+}
+#missao{
+	font-size: 1.3em;
+}
+#frase{
+	font-weight: bold;
+	text-decoration: underline;
+}
+.mapa{
+	padding: 3em 0;
+	text-align: center;
+	background: linear-gradient(#fefefe, #888888); 
+	/*degrade de 4 cores em 45° com a primeira cor ocupando metade do espaço e as demais o restante, ficaria 
+	background: linear-gradient(45deg, red 50%, black, blue, orange)
+	um degrade em circulo usa radius-gradiente */
+}
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+.mapa p{
+	margin-bottom: 2em;
+}
+.beneficios{
+	padding: 3em 0;
+	background: linear-gradient(#888888, #4F4F4F);
+}
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+.itens-beneficios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	line-height: 1.5em;
+}
+.itens:first-child{
+	font-weight: bold;
+}
+.itens:before{
+	content: "\2605  ";
+}
+
+.foto-beneficios{
+	width: 60%;
+	box-shadow: 10px 10px 30px 10px #000000; /*eixo X - eixo Y - transparência gradual - o quanto ela espalha - cor (colocando , ela adiiona outra sombra*/
+	/*sombra interna box-shaddow:  inside ...;*/
+	opacity: 1;
+	transition: 400ms;
+}
+.foto-beneficios:hover{
+	opacity: 0.3;
+}
+.video{
+	width: 560px;
+	margin: 2em auto;
+}
+footer{
+
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+.copyright{
+	color: #FFFFFF;
+	font-size: 13px;
+	margin-top: 20px;
+}
+@media screen and (max-width:  480px){
+	.caixa, .principal, .conteudo-beneficios, .video{
+		width: auto;
+	}
+	h1{
+		text-align: center;
+	}
+	nav{
+		position: static;
+}
